@@ -1,0 +1,76 @@
+name = "imagebuilderImage"
+description = "This blueprint make image builder for building developer desktop images"
+version = "0.0.4"
+modules = []
+groups = []
+distro = ""
+
+[[packages]]
+name = "osbuild"
+version = "*"
+
+[[packages]]
+name = "osbuild-composer"
+version = "*"
+
+[[packages]]
+name = "osbuild-selinux"
+version = "*"
+
+[[packages]]
+name = "cockpit"
+version = "*"
+
+[[packages]]
+name = "cockpit-composer"
+version = "*"
+
+[[packages]]
+name = "cockpit-machines"
+version = "*"
+
+[[packages]]
+name = "cockpit-podman"
+version = "*"
+
+[[packages]]
+name = "cockpit-session-recording"
+version = "*"
+
+[[packages]]
+name = "cockpit-storaged"
+version = "*"
+
+[[packages]]
+name = "cockpit-pcp"
+version = "*"
+
+[[packages]]
+name = "python3-sssdconfig"
+version = "*"
+
+[[packages]]
+name = "sssd"
+version = "*"
+
+[[packages]]
+name = "sssd-dbus"
+version = "*"
+
+[[packages]]
+name = "sssd-polkit-rules"
+version = "*"
+
+[[packages]]
+name = "sssd-tools"
+version = "*"
+
+[customizations]
+hostname = "imagebuiler-image"
+
+[[customizations.user]]
+name = "builder"
+description = "Builder"
+password = "redhat1!"
+groups = ["wheel"]
+

@@ -1,0 +1,140 @@
+name = "dev9OS"
+description = "developer box"
+version = "0.0.8"
+modules = []
+groups = []
+distro = ""
+
+[[packages]]
+name = "cockpit"
+version = "*"
+
+[[packages]]
+name = "cockpit-podman"
+version = "*"
+
+[[packages]]
+name = "cockpit-session-recording"
+version = "*"
+
+[[packages]]
+name = "cockpit-storaged"
+version = "*"
+
+[[packages]]
+name = "cockpit-pcp"
+version = "*"
+
+[[packages]]
+name = "git-all"
+version = "*"
+
+[[packages]]
+name = "java-11-openjdk"
+version = "*"
+
+[[packages]]
+name = "java-11-openjdk-demo"
+version = "*"
+
+[[packages]]
+name = "java-11-openjdk-devel"
+version = "*"
+
+[[packages]]
+name = "java-11-openjdk-javadoc"
+version = "*"
+
+[[packages]]
+name = "java-11-openjdk-jmods"
+version = "*"
+
+[[packages]]
+name = "java-11-openjdk-src"
+version = "*"
+
+[[packages]]
+name = "java-11-openjdk-static-libs"
+version = "*"
+
+[[packages]]
+name = "maven"
+version = "*"
+
+[[packages]]
+name = "container-tools"
+version = "*"
+
+[[packages]]
+name = "systemd-container"
+version = "*"
+
+[[packages]]
+name = "boost-container"
+version = "*"
+
+[[packages]]
+name = "vim-enhanced"
+version = "*"
+
+[[packages]]
+name = "python3-devel"
+version = "*"
+
+[[packages]]
+name = "python3-distro"
+version = "*"
+
+[[packages]]
+name = "python3-jmespath"
+version = "*"
+
+[[packages]]
+name = "python3-jsonpatch"
+version = "*"
+
+[[packages]]
+name = "python3-jsonschema"
+version = "*"
+
+[[packages]]
+name = "python3-meh"
+version = "*"
+
+[[packages]]
+name = "python3-netifaces"
+version = "*"
+
+[[packages]]
+name = "python3-netaddr"
+version = "*"
+
+[[packages]]
+name = "python3-packaging"
+version = "*"
+
+[[packages]]
+name = "python3-pycurl"
+version = "*"
+
+[[packages]]
+name = "python3-pytz"
+version = "*"
+
+[[packages]]
+name = "python3-pyyaml"
+version = "*"
+
+[[packages]]
+name = "open-vm-tools"
+version = "*"
+
+[customizations]
+hostname = "dev9vm"
+
+[[customizations.user]]
+name = "developer"
+description = "Developer"
+password = "redhat1!"
+groups = ["wheel"]
+
